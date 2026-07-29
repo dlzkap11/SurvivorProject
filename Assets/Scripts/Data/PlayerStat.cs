@@ -9,7 +9,6 @@ public class PlayerStat : MonoBehaviour
     [SerializeField] private int _level;
     [SerializeField] private int _hp;
     [SerializeField] private int _exp;
-    [SerializeField] int blinkCount = 6;
 
 
     private SpriteRenderer _sr;
