@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer _sr;
     private Animator _ani;
 
-    [SerializeField] private Vector2 _inputVec;
+    public Vector2 InputVec { get; private set; }
     private PlayerStat _stat;
 
     private void Awake()
@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rb.linearVelocity = _inputVec.normalized * _stat.Speed;
+        _rb.linearVelocity = InputVec.normalized * _stat.Speed;
     }
 
     private void Update()
@@ -36,8 +36,8 @@ public class PlayerController : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        _inputVec = value.Get<Vector2>();
-        if (_inputVec.x == 0 && _inputVec.y == 0)
+        InputVec = value.Get<Vector2>();
+        if (InputVec.x == 0 && InputVec.y == 0)
         {
             _ani.Play("Idle");
             return;
@@ -46,11 +46,11 @@ public class PlayerController : MonoBehaviour
 
 
         _ani.Play("Move");
-        if (_inputVec.x > 0)
+        if (InputVec.x > 0)
         {
             _sr.flipX = true;
         }
-        else if (_inputVec.x < 0)
+        else if (InputVec.x < 0)
         {
             _sr.flipX = false;
         }
