@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 21089139}
   - component: {fileID: 21089138}
   - component: {fileID: 21089137}
+  - component: {fileID: 21089143}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Ground
@@ -163,7 +164,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21089135}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e86066890d77f4f44b17157360b5eb9d, type: 3}
   m_Name: 
@@ -4420,6 +4421,20 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &21089143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21089135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77187cd576510f944b9b830271a3d600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionMap
+  mapSize: 40
+  playerPos: {fileID: 2088118258}
 --- !u!1 &182113017
 GameObject:
   m_ObjectHideFlags: 0
@@ -4865,6 +4880,7 @@ GameObject:
   - component: {fileID: 644725461}
   - component: {fileID: 644725460}
   - component: {fileID: 644725459}
+  - component: {fileID: 644725465}
   m_Layer: 0
   m_Name: Tilemap (3)
   m_TagString: Ground
@@ -4894,7 +4910,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644725457}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e86066890d77f4f44b17157360b5eb9d, type: 3}
   m_Name: 
@@ -9151,6 +9167,20 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &644725465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644725457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77187cd576510f944b9b830271a3d600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionMap
+  mapSize: 40
+  playerPos: {fileID: 2088118258}
 --- !u!1 &1335582625
 GameObject:
   m_ObjectHideFlags: 0
@@ -9366,6 +9396,7 @@ GameObject:
   - component: {fileID: 1701508875}
   - component: {fileID: 1701508874}
   - component: {fileID: 1701508873}
+  - component: {fileID: 1701508879}
   m_Layer: 0
   m_Name: Tilemap (2)
   m_TagString: Ground
@@ -9395,7 +9426,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701508871}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e86066890d77f4f44b17157360b5eb9d, type: 3}
   m_Name: 
@@ -13652,6 +13683,20 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1701508879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701508871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77187cd576510f944b9b830271a3d600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionMap
+  mapSize: 40
+  playerPos: {fileID: 2088118258}
 --- !u!1 &1880415246
 GameObject:
   m_ObjectHideFlags: 0
@@ -13715,6 +13760,7 @@ GameObject:
   - component: {fileID: 2022871032}
   - component: {fileID: 2022871031}
   - component: {fileID: 2022871030}
+  - component: {fileID: 2022871036}
   m_Layer: 0
   m_Name: Tilemap (1)
   m_TagString: Ground
@@ -13744,7 +13790,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022871028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e86066890d77f4f44b17157360b5eb9d, type: 3}
   m_Name: 
@@ -18001,6 +18047,20 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &2022871036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022871028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77187cd576510f944b9b830271a3d600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionMap
+  mapSize: 40
+  playerPos: {fileID: 2088118258}
 --- !u!1 &2045117168
 GameObject:
   m_ObjectHideFlags: 0
