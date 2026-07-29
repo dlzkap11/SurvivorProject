@@ -36,6 +36,13 @@ public class PlayerController : MonoBehaviour
 
     void OnMove(InputValue value)
     {
+        if (_stat.IsDead)
+        {
+            InputVec = Vector2.zero;
+            return;
+        }
+            
+
         InputVec = value.Get<Vector2>();
         if (InputVec.x == 0 && InputVec.y == 0)
         {

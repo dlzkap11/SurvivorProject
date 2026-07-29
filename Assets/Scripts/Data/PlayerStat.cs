@@ -9,10 +9,11 @@ public class PlayerStat : MonoBehaviour
     [SerializeField] private int _level;
     [SerializeField] private int _hp;
     [SerializeField] private int _exp;
-
+    
 
     private SpriteRenderer _sr;
     public float Speed { get; private set; }
+    public bool IsDead { get; private set; }
 
     private Coroutine _blinkCoroutine;
 
@@ -29,6 +30,15 @@ public class PlayerStat : MonoBehaviour
     {
         if (collision.transform.CompareTag("Wall")) return;
         if (_blinkCoroutine != null) return;
+
+        //TODO 피격데미지
+        //TakeDamage();
+        _hp--;
+        if( _hp <= 0)
+        {
+            IsDead = true;
+        }
+
 
         _blinkCoroutine = StartCoroutine(BlinkRoutine());
     }
